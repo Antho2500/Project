@@ -1,7 +1,7 @@
 const fs=require("fs");
 const Discord=require("discord.js");
 const bot=new Discord.Client();
-bot.login("process.env.TOKEN");
+bot.login(process.env.TOKEN);
 const rpchannels=["631904154662600720"];
 var levels=JSON.parse(fs.readFileSync("levels.json","utf-8"));
 bot.on("message",(msg)=>{
